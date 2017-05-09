@@ -1,0 +1,81 @@
+body {
+	/*background-image: url('../img/background.png');
+	background-size: contain;*/
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+nav {
+	background-color: #00D9EE;
+}
+
+.page-footer {
+	background-color: #00D9EE;
+}
+
+.card.gallery {
+	opacity: 0.7;
+}
+
+.card.gallery:hover {
+	opacity: 1;
+	transition: opacity 0.4s linear; 
+}
+
+.about .card-image .card-title {
+	font-weight: 500;
+}
+
+option span,
+.card-action a {
+	color: #00D9EE !important;
+}
+
+#submit {
+	display: flex;
+	justify-content: center;
+}
+
+.page-hidden {
+	display: none;
+}
+
+.pagination li.active {
+	background-color: #00D9EE;
+}
+
+.carousel .carousel-item img {
+	border: 1px solid black;
+	width: 150%;
+}
+
+.carousel {
+	transform: translateX(-5%) translateY(-15%);
+}
+
+h2 {
+	text-align: center;
+	font-weight: 500;
+}
+
+p {
+	text-align: justify;
+}
+
+.popup {
+	width:1000px !important;
+}
+
+.popup img {
+	float:left !important; 
+	width: 450px !important; 
+	margin-right: 20px !important;
+}
