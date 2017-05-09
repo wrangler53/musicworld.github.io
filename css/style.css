@@ -80,7 +80,7 @@ p {
 	margin-right: 20px !important;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 601px) {	
 	.nav-wrapper img {
 		float: right;
 		width: 20% !important;
@@ -98,14 +98,17 @@ p {
 		align-items: center;
 	}
 
-	.popup {
-		width: 10% !important;
+	.carousel {
+		display: none;
 	}
 
-	.popup img {
-		width: 60% !important;
-		margin-left: 55px;
-		margin-bottom: 5px: 
+	#slider0 {
+		display: none;
 	}
 }
 
+@media (min-width: 602px) {
+	#slider {
+		display: none;
+	}
+}

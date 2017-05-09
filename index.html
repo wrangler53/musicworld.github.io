@@ -10,15 +10,21 @@
 	
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 	<link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
 </head>
 
 <body>	
 	<script>
 		$(document).ready(function(){
 			$('.carousel').carousel();
+		});
+
+		$(document).ready(function(){
+			$('.slider').slider();
 		});
 	</script>
 
@@ -40,37 +46,72 @@
 				<img src="img/logo.png" width="50%" align="center">
 			</li>
 			<li><div class="divider"></div></li>       
-	        <li>
-	            <a href="index.html">Main page</a>
-	        </li>
-	        <li><div class="divider"></div></li>
-	        <li>
-	            <a href="gallery.html">Gallery</a>
-	        </li>
-	        <li><div class="divider"></div></li>
-	        <li>
-	            <a href="about.html">About us</a>
-	        </li>        	
-    	</ul> 
+			<li>
+				<a href="index.html">Main page</a>
+			</li>
+			<li><div class="divider"></div></li>
+			<li>
+				<a href="gallery.html">Gallery</a>
+			</li>
+			<li><div class="divider"></div></li>
+			<li>
+				<a href="about.html">About us</a>
+			</li>        	
+		</ul> 
 
 
 		<h2>Rock bands</h2>
 
-		<div class="container">
+		<div class="container" id="slider0">
 			<div class="row">
 				<div class="carousel">
-					<a class="carousel-item" href="#one!"><img src="img/oe.jpg"></a>
-					<a class="carousel-item" href="#two!"><img src="img/rhcp.jpeg"></a>
-					<a class="carousel-item" href="#three!"><img src="img/acdc.jpg"></a>
-					<a class="carousel-item" href="#four!"><img src="img/avicii.jpg"></a>
-					<a class="carousel-item" href="#five!"><img src="img/queen.jpg"></a>
-					<a class="carousel-item" href="#four!"><img src="img/muse.jpg"></a>
-					<a class="carousel-item" href="#five!"><img src="img/greenday.jpg"></a>
-					<a class="carousel-item" href="#four!"><img src="img/alt-j.jpg"></a>
-					<a class="carousel-item" href="#five!"><img src="img/chickenfoot.jpg"></a>
+					<a class="carousel-item" href="http://www.okeanelzy.com/" target="_self"><img src="img/oe.jpg"></a>
+					<a class="carousel-item" href="http://redhotchilipeppers.com/" target="_self"><img src="img/rhcp.jpeg"></a>
+					<a class="carousel-item" href="http://www.acdc.com/" target="_self"><img src="img/acdc.jpg"></a>
+					<a class="carousel-item" href="http://www.avicii.com/" target="_self"><img src="img/avicii.jpg"></a>
+					<a class="carousel-item" href="http://www.queenonline.com/"><img src="img/queen.jpg"></a>
+					<a class="carousel-item" href="http://muse.mu/" target="_self"><img src="img/muse.jpg"></a>
+					<a class="carousel-item" href="http://www.greenday.com/" target="_self"><img src="img/greenday.jpg"></a>
+					<a class="carousel-item" href="http://www.altjband.com/" target="_self"><img src="img/alt-j.jpg"></a>
+					<a class="carousel-item" href="http://www.chickenfoot.us/" target="_self"><img src="img/chickenfoot.jpg"></a>
 				</div>
+
 			</div>
-		</div>
+		</div>		
+
+		<div id="slider">
+	        <div class="slider-inner">
+	            <ul>
+	                <li>
+	                    <a class="ns-img" href="img/oe.jpg"></a>
+	                </li>
+	                <li>
+	                    <a class="ns-img" href="img/rhcp.jpeg"></a>
+	                </li>
+	                <li>
+	                    <a class="ns-img" href="img/acdc.jpg"></a>
+	                </li>
+	                <li>
+	                    <a class="ns-img" href="img/avicii.jpg"></a>
+	                </li>
+	                <li>
+	                    <a class="ns-img" href="img/queen.jpg"></a>
+	                </li>
+	                <li>
+	                    <a class="ns-img" href="img/muse.jpg"></a>
+	                </li>
+	                <li>
+	                    <a class="ns-img" href="img/greenday.jpg"></a>
+	                </li>
+	                <li>
+	                    <a class="ns-img" href="img/alt-j.jpg"></a>
+	                </li>
+	                <li>
+	                    <a class="ns-img" href="img/chickenfoot.jpg"></a>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
 
 	</main>
 
