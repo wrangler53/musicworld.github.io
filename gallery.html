@@ -47,7 +47,6 @@
 							$(li).html(
 								$(li).html() + '<a href="#" class="overlay" id="modal' + [j] + '"></a>' + '<div class="popup"><h4><b>' + responce.img[j].name + '</b></h4><img src="' + responce.img[j].url + '"><a class="close" href="#close"></a><p>' + responce.img[j].description + '</p></div>'
 								)
-
 						}						
 					}
 
@@ -83,37 +82,67 @@
 		});
 	</script>
 
-        <nav>
-        	<div class="nav-wrapper container">
-        		<a href="index.html"><img src="img/logo.png" width="9%"></a>
-        		<ul id="nav-mobile" class="right hide-on-med-and-down">
-        			<li><a href="index.html">Main</a></li>
-        			<li><a href="gallery.html">Gallery</a></li>
-        			<li><a href="about.html">About</a></li>
-        		</ul>
-        	</div>
-        </nav>
+	<main>
 
-        <main>
-        	<div class="container">
-        		<ul class="row" id="gallery">
+		<nav>
+			<div class="nav-wrapper container">
+				<a href="index.html"><img src="img/logo.png" width="9%"></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="index.html">Main</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+			</div>
+		</nav>
 
-        		</ul>
+		<ul id="slide-out" class="side-nav">
+			<li>
+				<img src="img/logo.png" width="50%" align="center">
+			</li>
+			<li><div class="divider"></div></li>       
+	        <li>
+	            <a href="index.html">Main page</a>
+	        </li>
+	        <li><div class="divider"></div></li>
+	        <li>
+	            <a href="gallery.html">Gallery</a>
+	        </li>
+	        <li><div class="divider"></div></li>
+	        <li>
+	            <a href="about.html">About us</a>
+	        </li>        	
+    	</ul>
 
-        		<ul class="pagination">
+		<div class="container">
+			<ul class="row" id="gallery">
 
-        		</ul>
-        	</div>
-        </main>
+			</ul>
 
-        <footer class="page-footer">
-        	<div class="footer-copyright">
-        		<div class="container">
-        			&copy Melnychuk Yaroslav, IK-42
-        		</div>
-        	</div>
-        </footer>
+			<ul class="pagination">
 
-    </body>
-    </html>
+			</ul>
+		</div>
+	</main>
+
+	<footer class="page-footer">
+		<div class="footer-copyright">
+			<div class="container">
+				&copy Melnychuk Yaroslav, IK-42
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		$('.button-collapse').sideNav({
+	      	menuWidth: 300, // Default is 300
+	      	edge: 'left', // Choose the horizontal origin
+	      	closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+	      	draggable: true // Choose whether you can drag to open on touch screens
+	  	}
+	  	);
+	</script>
+
+</body>
+</html>
 

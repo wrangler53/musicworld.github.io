@@ -80,3 +80,32 @@ p {
 	margin-right: 20px !important;
 }
 
+@media (max-width: 601px) {
+	.nav-wrapper img {
+		float: right;
+		width: 20% !important;
+	}
+
+	.nav-wrapper {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	.side-nav li:first-child {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.popup {
+		width: 10% !important;
+	}
+
+	.popup img {
+		width: 90% !important;
+		margin-left: 15px;
+		margin-bottom: 5px: 
+	}
+}
+

@@ -22,46 +22,75 @@
 		});
 	</script>
 
-<main>
-<nav>
-	<div class="nav-wrapper container">
-		<a href="index.html"><img src="img/logo.png" width="9%"></a>
-		<ul id="nav-mobile" class="right hide-on-med-and-down">
-			<li><a href="index.html">Main</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="about.html">About</a></li>
-		</ul>
-	</div>
-</nav>
+	<main>
+		<nav>
+			<div class="nav-wrapper container">
+				<a href="index.html"><img src="img/logo.png" width="9%"></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="index.html">Main</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+			</div>
+		</nav>
+
+		<ul id="slide-out" class="side-nav">
+			<li>
+				<img src="img/logo.png" width="50%" align="center">
+			</li>
+			<li><div class="divider"></div></li>       
+	        <li>
+	            <a href="index.html">Main page</a>
+	        </li>
+	        <li><div class="divider"></div></li>
+	        <li>
+	            <a href="gallery.html">Gallery</a>
+	        </li>
+	        <li><div class="divider"></div></li>
+	        <li>
+	            <a href="about.html">About us</a>
+	        </li>        	
+    	</ul> 
 
 
-	<h2>Rock bands</h2>
+		<h2>Rock bands</h2>
 
-	<div class="container">
-		<div class="row">
-			<div class="carousel">
-				<a class="carousel-item" href="#one!"><img src="img/oe.jpg"></a>
-				<a class="carousel-item" href="#two!"><img src="img/rhcp.jpeg"></a>
-				<a class="carousel-item" href="#three!"><img src="img/acdc.jpg"></a>
-				<a class="carousel-item" href="#four!"><img src="img/avicii.jpg"></a>
-				<a class="carousel-item" href="#five!"><img src="img/queen.jpg"></a>
-				<a class="carousel-item" href="#four!"><img src="img/muse.jpg"></a>
-				<a class="carousel-item" href="#five!"><img src="img/greenday.jpg"></a>
-				<a class="carousel-item" href="#four!"><img src="img/alt-j.jpg"></a>
-				<a class="carousel-item" href="#five!"><img src="img/chickenfoot.jpg"></a>
+		<div class="container">
+			<div class="row">
+				<div class="carousel">
+					<a class="carousel-item" href="#one!"><img src="img/oe.jpg"></a>
+					<a class="carousel-item" href="#two!"><img src="img/rhcp.jpeg"></a>
+					<a class="carousel-item" href="#three!"><img src="img/acdc.jpg"></a>
+					<a class="carousel-item" href="#four!"><img src="img/avicii.jpg"></a>
+					<a class="carousel-item" href="#five!"><img src="img/queen.jpg"></a>
+					<a class="carousel-item" href="#four!"><img src="img/muse.jpg"></a>
+					<a class="carousel-item" href="#five!"><img src="img/greenday.jpg"></a>
+					<a class="carousel-item" href="#four!"><img src="img/alt-j.jpg"></a>
+					<a class="carousel-item" href="#five!"><img src="img/chickenfoot.jpg"></a>
+				</div>
 			</div>
 		</div>
-	</div>
 
-</main>
+	</main>
 
-<footer class="page-footer">
-	<div class="footer-copyright">
-		<div class="container">
-			&copy Melnychuk Yaroslav, IK-42
+	<footer class="page-footer">
+		<div class="footer-copyright">
+			<div class="container">
+				&copy Melnychuk Yaroslav, IK-42
+			</div>
 		</div>
-	</div>
-</footer>
+	</footer>
+
+	<script>
+		$('.button-collapse').sideNav({
+	      menuWidth: 300, // Default is 300
+	      edge: 'left', // Choose the horizontal origin
+	      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+	      draggable: true // Choose whether you can drag to open on touch screens
+	  }
+	  );
+	</script>
 
 </body>
 </html>
